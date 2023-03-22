@@ -37,22 +37,47 @@ let active = false; // exempel för att visa att du kan lägga till klass för a
 
 let achievements = [
     {
-        description: 'Museet är redo att öppna, grattis! ',
+        description: 'Det är dags att öppna restaurangen! ',
         requiredUpgrades: 1,
         acquired: false,
     },
     {
-        description: 'Nu börjar det likna något, fortsätt gräva!',
+        description: 'Nu börjar det likna en riktig restaurang!',
         requiredUpgrades: 10,
         acquired: false,
     },
     {
-        description: 'Klickare, med licens att klicka!',
+        description: 'Nu har vi en restaurang expert!',
+        requiredUpgrades: 20,
+        acquired: false,
+    },
+    {
+        description: 'Restaurangen är nu världs känd',
+        requiredUpgrades: 30,
+        acquired: false,
+    },
+    {
+        description: 'Restaurangen är bäst i världen',
+        requiredUpgrades: 40,
+        acquired: false,
+    },
+    {
+        description: 'Nybörjar Klickare',
         requiredClicks: 10,
         acquired: false,
     },
     {
-        description: 'Tac-2 god!',
+        description: 'Veteran Klickare',
+        requiredClicks: 100,
+        acquired: false,
+    },
+    {
+        description: 'Klick Mästare',
+        requiredClicks: 1000,
+        acquired: false,
+    },
+    {
+        description: 'Gudomlig Klickare',
         requiredClicks: 10000,
         acquired: false,
     },
@@ -163,12 +188,12 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Anställ en hjälpreda',
+        name: 'Lär dig mer maträtter',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Lär dig mer maträtter',
+        name: 'Anställ en hjälpreda',
         cost: 50,
         clicks: 2,
     },
@@ -178,9 +203,14 @@ upgrades = [
         amount: 10,
     },
     {
-        name: 'En till restaurang',
+        name: 'Upgradera din restaurang/restauranger',
         cost: 1000,
         amount: 100,
+    },
+    {
+        name: 'En till restaurang',
+        cost: 10000,
+        amount: 1000,
     },
 ];
 
@@ -220,12 +250,12 @@ function createCard(upgrade) {
             acquiredUpgrades++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            cost.textContent = 'Köp för ' + Math.trunc(upgrade.cost) + ' Maträtter';
             moneyPerSecond += upgrade.amount ? upgrade.amount : 0;
             moneyPerClick += upgrade.clicks ? upgrade.clicks : 0;
-            message('Grattis du har köpt en uppgradering!', 'success');
+            message('Upgradering köpt!', 'success');
         } else {
-            message('Du har inte råd.', 'warning');
+            message('Du måste laga mer mat.', 'warning');
         }
     });
 

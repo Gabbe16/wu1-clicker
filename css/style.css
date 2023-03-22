@@ -2,8 +2,9 @@
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-    --color-lighter: hsl(0, 0%, 100%);
+    --color-lighter: rgb(175, 175, 227);
     --color-light: hsl(0, 0%, 100%);
+    --color-light-transparent: hsla(0, 0%, 100%, 0.148);
     --color-dark: hsl(360, 10%, 10%);
     --color-dark-transparent: hsla(360, 10%, 10%, 0.2);
 
@@ -23,10 +24,10 @@
 }
 
 body {
-    background-color: var(--color-light);
+    background-color: rgb(50, 50, 95);
     color: var(--color-dark);
-    font-family: sans-serif;
     font-size: var(--step-0);
+    font-family: 'Lobster', cursive;
 }
 
 h1 {
@@ -34,6 +35,10 @@ h1 {
     text-transform: uppercase;
     font-weight: 700;
     max-width: 20ch;
+}
+
+h2 {
+    color: white;
 }
 
 /* göm audio, används för att preloada ljudet */
@@ -57,6 +62,7 @@ audio {
 }
 .footer > * {
     font-size: var(--step--1);
+    color: var(--color-light);
 }
 .hero {
     display: grid;
@@ -125,6 +131,7 @@ audio {
     display: flex;
     justify-content: space-between;
     gap: var(--space-xs-s);
+    color: white;
 }
 
 @media (max-width: 30rem) {
@@ -145,7 +152,7 @@ audio {
     background-size: cover;
     background-position: center;
     border: 2px solid transparent;
-    color: var(--color-light);
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
@@ -180,16 +187,24 @@ audio {
  * meddelanden. Javascript används för att lägga till stilen på meddelandet
  */
 .warning {
-    background-color: palevioletred;
+    background-color: rgb(190, 45, 93);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .success {
-    background-color: mediumspringgreen;
+    background-color: rgb(0, 202, 124);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .achievement {
-    color: var(--color-light);
-    background-color: rebeccapurple;
+    color: white;
+    background-color: rgb(193, 189, 65);
+    border-radius: 15px;
+    text-align: center;
 }
 
 /* dessa kort används för spelets uppgraderingar 
@@ -203,10 +218,12 @@ audio {
     border: 1px solid var(--color-dark-transparent);
     margin: var(--space-xs-s) 0;
     padding: var(--space-s-m) var(--space-xs-s);
+    background-color: rgb(60, 60, 150);
+    color: white;
 }
 
 .card:hover {
-    background-color: var(--color-lighter);
+    background-color: var(--color-dark-transparent);
 }
 
 .card p:not(.title) {
@@ -223,16 +240,20 @@ audio {
 
 @keyframes flash {
     0% {
-        color: var(--color-dark);
+        color: white;
     }
     50% {
-        color: var(--color-dark-transparent);
+        color: var(--color-light-transparent);
     }
     100% {
-        color: var(--color-dark);
+        color: white;
     }
 }
 
 .active {
     animation: flash 1s infinite;
+}
+
+a {
+    color: var(--color-lighter);
 }
