@@ -1,10 +1,18 @@
-## vecka 11. 
+## Dokumentation av clicker
 
-- Jag har påbörjat min restaurant clicker och har börjat ändra texten och ett fåtal bilder i clicker exemplet
+# vecka 11. 
 
-## Vecka 12.
+- Jag har påbörjat min restaurant clicker och har påbörjat ändra text och ett fåtal bilder i clicker exemplet som vi har fått
 
-- Nu har jag ändrat både färgen av bakgrunden, bakgrunden av knapparna, färgen på texten och lagt till sista bilden för hero image. Jag har även gjort att upgrade.cost avrundas till heltal med Math.trunc(). Message box har fått en liten fix för hur den ser ut med centrerad text och ny border radius. Till sist har jag lagt till nya achievements och lagt till en ny upgradering och ändrat ordning på upgrades. 
+# Vecka 12.
 
-- Nästa gång blir att finslipa lite mer av designen av hemsidan, speciellt gamebutton.
+- Idag har jag ändrat färgen av bakgrunden, bakgrunden av knapparna, färgen på texten och lagt till sista bilderna som behövdes. Jag har även gjort att upgrade.cost avrundas till heltal med Math.trunc() för att inte få många decimaltal. Message box har fått en ny liten design för hur den ser ut med centrerad text och en ny border radius för rundade kanter. Till sist har jag lagt till nya achievements och lagt till en ny upgradering och därefter ändrat ordning på upgrades. 
+
+- Nästa gång blir att finslipa lite mer av designen av hemsidan, credits/pull requests och gamebutton.
+
+# Vecka 13
+
+- Idag har jag fixat credits och fixat länken till pull requests. Jag har även färdigställt clickern med att göra klart design biten för gamebutton.
+
+
 
