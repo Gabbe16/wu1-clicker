@@ -12,7 +12,7 @@
 
 # Vecka 13
 
-- Idag har jag fixat credits och fixat länken till pull requests. Jag har även färdigställt clickern med att göra klart design biten för gamebutton.
+- Idag har jag fixat credits och fixat länken till pull requests. Jag har även färdigställt clickern med att göra klart design biten för gamebutton. Jag har även validerat html dokumentet.
 
 
 
