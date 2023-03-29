@@ -159,12 +159,12 @@ audio {
 }
 
 #game-button:hover {
-    border-color: var(--color-dark-transparent);
+    border-color: white;
 }
 
 #game-button:active {
-    border-color: var(--color-dark);
-    background-color: var(--color-dark-transparent);
+    border-color: white;
+    background-color: rgb(183, 179, 179);
 }
 
 /* #msgbox är elementet som visar sidans toasts, popupmeddelanden
