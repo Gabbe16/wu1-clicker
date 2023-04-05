@@ -16,3 +16,7 @@
 
 
 
+# Feedback av speltest
+
+- Bra färger, bra kontraster
+- font är svår att läsa x2
