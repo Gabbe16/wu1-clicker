@@ -1,5 +1,15 @@
 # Clicker, webbprojekt
 
+```
+    {
+        title: 'Restaurang Clicker',
+        tagline: 'Skapa din egna dröm restaurang!',
+        url: 'https://gabbe16.github.io/wu1-clicker/',
+        git: 'https://github.com/Gabbe16/wu1-clicker',
+        author: 'Gabriel Nilsson Högberg'
+    },
+```
+
 Du har fått i uppdrag att designa och skapa ett clicker-spel från Kakmonstret AB.
 Till ditt förfogande har du lite kod som en tidigare anställd lämnat efter sig, använd den.
 
